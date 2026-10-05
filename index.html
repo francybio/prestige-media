@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Prestige Media · Agencia de marketing digital</title>
-<meta name="description" content="Prestige Media, agencia de marketing digital: diseño de webs corporativas, landing pages, gestión de redes sociales y posicionamiento en Google (SEO). Webs a medida, sin plantillas. Tel. 625 179 835.">
+<meta name="description" content="Prestige Media, agencia de marketing digital: webs corporativas, landing pages, gestión de redes sociales y posicionamiento en Google (SEO). Diseñe su web en directo.">
 <meta name="theme-color" content="#050506">
 <meta property="og:title" content="Prestige Media · El prestigio no se improvisa. Se diseña.">
-<meta property="og:description" content="Webs corporativas, landing pages, redes sociales y SEO. Agencia de marketing digital.">
+<meta property="og:description" content="Webs corporativas, landing pages, redes sociales y SEO. Diseñe su web en directo.">
 <meta property="og:image" content="assets/img/og.jpg">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="is-loading">
@@ -30,24 +30,30 @@
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="nav__burger"><i></i><i></i></span><span class="nav__label">Menú</span></button>
-  <a class="nav__logo" href="#inicio" aria-label="Prestige Media — inicio"><img src="assets/img/pm-logo.png" alt="Prestige Media"></a>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="nav__burger"><i></i><i></i></span><span class="nav__label" data-i18n="nav.menu">Menú</span></button>
+  <a class="nav__logo" href="#inicio" aria-label="Prestige Media"><img src="assets/img/pm-logo.png" alt="Prestige Media"></a>
   <div class="nav__right">
-    <a class="nav__link" href="tel:+34625179835"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>625 179 835</span></a>
-    <a class="pill" href="#contacto">Solicitar propuesta</a>
+    <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+      <button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="ca">CA</button><button type="button" data-lang="fr">FR</button>
+    </div>
+    <a class="nav__link" href="tel:+34625179835" aria-label="+34 625 179 835"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>625 179 835</span></a>
+    <a class="pill" href="#contacto" data-i18n="nav.cta">Solicitar propuesta</a>
   </div>
 </header>
 
 <div class="menu" id="menu" aria-hidden="true">
   <img class="menu__mark" src="assets/img/pm-logo.png" alt="" aria-hidden="true">
-  <nav class="menu__links" aria-label="Menú principal">
-    <a href="#agencia"><small>I</small>La agencia</a>
-    <a href="#servicios"><small>II</small>Servicios</a>
-    <a href="#metodo"><small>III</small>Método</a>
-    <a href="#proyectos"><small>IV</small>Proyectos</a>
-    <a href="#contacto"><small>V</small>Contacto</a>
+  <nav class="menu__links">
+    <a href="#agencia"><small>I</small><span data-i18n="menu.agency">La agencia</span></a>
+    <a href="#servicios"><small>II</small><span data-i18n="menu.services">Servicios</span></a>
+    <a href="#metodo"><small>III</small><span data-i18n="menu.method">Método</span></a>
+    <a href="#disena"><small>IV</small><span data-i18n="menu.studio">Diseñe su web</span></a>
+    <a href="#contacto"><small>V</small><span data-i18n="menu.contact">Contacto</span></a>
   </nav>
   <div class="menu__foot">
+    <div class="lang lang--menu" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.lang">
+      <button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="ca">CA</button><button type="button" data-lang="fr">FR</button>
+    </div>
     <a href="tel:+34625179835">+34 625 179 835</a>
     <a href="mailto:fbiondo2612@gmail.com">fbiondo2612@gmail.com</a>
     <a href="#" data-wa target="_blank" rel="noopener">WhatsApp</a>
@@ -55,12 +61,12 @@
 </div>
 
 <nav class="dots" aria-label="Secciones">
-  <a href="#inicio" data-dot="inicio"><span>Inicio</span></a>
-  <a href="#agencia" data-dot="agencia"><span>Agencia</span></a>
-  <a href="#servicios" data-dot="servicios"><span>Servicios</span></a>
-  <a href="#metodo" data-dot="metodo"><span>Método</span></a>
-  <a href="#proyectos" data-dot="proyectos"><span>Proyectos</span></a>
-  <a href="#contacto" data-dot="contacto"><span>Contacto</span></a>
+  <a href="#inicio" data-dot="inicio"><span data-i18n="dots.home">Inicio</span></a>
+  <a href="#agencia" data-dot="agencia"><span data-i18n="dots.agency">Agencia</span></a>
+  <a href="#servicios" data-dot="servicios"><span data-i18n="dots.services">Servicios</span></a>
+  <a href="#metodo" data-dot="metodo"><span data-i18n="dots.method">Método</span></a>
+  <a href="#disena" data-dot="disena"><span data-i18n="dots.studio">Diseño</span></a>
+  <a href="#contacto" data-dot="contacto"><span data-i18n="dots.contact">Contacto</span></a>
 </nav>
 
 <main>
@@ -71,163 +77,155 @@
     <canvas class="landing__dust" aria-hidden="true"></canvas>
     <div class="landing__glow" aria-hidden="true"></div>
     <figure class="landing__logo" data-landing-logo>
-      <img src="assets/img/prestige-landing.png" alt="Prestige Media — Redes sociales · Páginas web · Marketing digital" fetchpriority="high">
+      <img src="assets/img/prestige-landing.png" alt="Prestige Media — Redes sociales · Páginas web · Marketing digital" data-i18n-attr="alt:land.alt" fetchpriority="high">
       <span class="landing__sheen" aria-hidden="true"></span>
       <span class="landing__spot" aria-hidden="true"></span>
     </figure>
     <div class="landing__claim" data-claim>
-      <p class="kicker">Agencia de marketing digital</p>
-      <h1 class="landing__title"><span>El prestigio</span> <span>no se improvisa.</span> <em>Se diseña.</em></h1>
+      <p class="kicker" data-i18n="land.kicker">Agencia de marketing digital</p>
+      <h1 class="landing__title" data-i18n="land.title"><span>El prestigio</span> <span>no se improvisa.</span> <em>Se diseña.</em></h1>
       <div class="landing__ctas">
-        <a class="btn btn--silver magnetic" href="#contacto">Solicitar una propuesta</a>
-        <a class="btn btn--ghost magnetic" href="#servicios">Ver servicios</a>
+        <a class="btn btn--silver magnetic" href="#contacto" data-i18n="land.cta1">Solicitar una propuesta</a>
+        <a class="btn btn--ghost magnetic" href="#disena" data-i18n="land.cta2">Diseñar mi web</a>
       </div>
     </div>
-    <div class="landing__corner landing__corner--l">Webs · Redes · SEO · Publicidad</div>
+    <div class="landing__corner landing__corner--l" data-i18n="land.corner">Webs · Redes · SEO · Publicidad</div>
     <a class="landing__corner landing__corner--r" href="tel:+34625179835">+34 625 179 835</a>
-    <div class="landing__scroll" aria-hidden="true"><span>Desliza</span><i></i></div>
+    <div class="landing__scroll" aria-hidden="true"><span data-i18n="land.scroll">Desliza</span><i></i></div>
   </div>
 </section>
 
 <!-- ============ AGENCIA ============ -->
 <section class="intro" id="agencia">
-  <p class="kicker" data-reveal>I · La agencia</p>
-  <p class="intro__text" data-words>En Prestige Media creamos presencias digitales a la altura de las marcas que las merecen. Webs que convierten, redes que inspiran y estrategias que se miden mes a mes, con el cuidado de lo hecho a mano.</p>
+  <p class="kicker" data-reveal data-i18n="intro.kicker">I · La agencia</p>
+  <p class="intro__text" data-words data-i18n="intro.text">En Prestige Media creamos presencias digitales a la altura de las marcas que las merecen. Webs que convierten, redes que inspiran y estrategias que se miden mes a mes, con el cuidado de lo hecho a mano.</p>
   <div class="intro__foot" data-reveal>
     <span class="hair"></span>
-    <p>Diseño web · Landing pages · Redes sociales · Posicionamiento en Google · Branding · Publicidad</p>
+    <p data-i18n="intro.foot">Diseño web · Landing pages · Redes sociales · Posicionamiento en Google · Branding · Publicidad</p>
   </div>
 </section>
 
 <!-- ============ SERVICIOS ============ -->
 <section class="services" id="servicios">
   <header class="services__head">
-    <p class="kicker" data-reveal>II · Servicios</p>
-    <h2 class="h2" data-reveal>Cuatro disciplinas. <em>Un mismo estándar.</em></h2>
+    <p class="kicker" data-reveal data-i18n="svc.kicker">II · Servicios</p>
+    <h2 class="h2" data-reveal data-i18n="svc.title">Cuatro disciplinas. <em>Un mismo estándar.</em></h2>
   </header>
 
   <div class="vitrine" data-vitrine>
-    <!-- I -->
     <article class="pane is-open" data-pane="web" tabindex="0">
-      <div class="pane__top"><span class="pane__num">I</span><span class="pane__tag">Web corporativa</span></div>
+      <div class="pane__top"><span class="pane__num">I</span><span class="pane__tag" data-i18n="svc.web.tag">Web corporativa</span></div>
       <div class="pane__visual">
         <div class="browser">
-          <div class="browser__bar"><i></i><i></i><i></i><span>suempresa.com</span></div>
-          <div class="browser__view" data-rotate>
-            <img src="assets/img/work/bhawna-neus.jpg" alt="" loading="lazy">
-            <img src="assets/img/work/lidia-fornes-estetica.jpg" alt="" loading="lazy">
-            <img src="assets/img/work/trivis-peluqueria.jpg" alt="" loading="lazy">
-          </div>
+          <div class="browser__bar"><i></i><i></i><i></i><span data-i18n="vis.url">suempresa.com</span></div>
+          <div class="browser__view browser__view--mini" data-mini></div>
         </div>
       </div>
       <div class="pane__body">
-        <h3>Una web que transmite<br><em>lo que vale su negocio.</em></h3>
-        <p>Diseño y desarrollo a medida, sin plantillas: rápida, clara y pensada para convertir visitas en clientes.</p>
+        <h3 data-i18n="svc.web.h">Una web que transmite<br><em>lo que vale su negocio.</em></h3>
+        <p data-i18n="svc.web.p">Diseño y desarrollo a medida, sin plantillas: rápida, clara y pensada para convertir visitas en clientes.</p>
         <ul>
-          <li>Diseño 100% personalizado</li>
-          <li>Perfecta en móvil y ultrarrápida</li>
-          <li>Textos y estructura orientados a convertir</li>
-          <li>SEO técnico de base y analítica</li>
+          <li data-i18n="svc.web.l1">Diseño 100% personalizado</li>
+          <li data-i18n="svc.web.l2">Perfecta en móvil y ultrarrápida</li>
+          <li data-i18n="svc.web.l3">Textos y estructura orientados a convertir</li>
+          <li data-i18n="svc.web.l4">SEO técnico de base y analítica</li>
         </ul>
-        <button type="button" class="btn btn--silver btn--sm" data-want="web">Iniciar un proyecto</button>
+        <button type="button" class="btn btn--silver btn--sm" data-want="web" data-i18n="svc.web.btn">Iniciar un proyecto</button>
       </div>
     </article>
-    <!-- II -->
     <article class="pane" data-pane="landing" tabindex="0">
-      <div class="pane__top"><span class="pane__num">II</span><span class="pane__tag">Landing pages</span></div>
+      <div class="pane__top"><span class="pane__num">II</span><span class="pane__tag" data-i18n="svc.land.tag">Landing pages</span></div>
       <div class="pane__visual">
         <div class="funnel" aria-hidden="true">
           <div class="funnel__phone">
             <span class="funnel__bar w80"></span><span class="funnel__bar w60"></span>
             <span class="funnel__img"></span>
             <span class="funnel__bar w90 thin"></span><span class="funnel__bar w70 thin"></span>
-            <span class="funnel__cta">Reservar ahora</span>
+            <span class="funnel__cta" data-i18n="vis.cta">Reservar ahora</span>
           </div>
-          <div class="funnel__steps"><span>Visita</span><i></i><span>Interés</span><i></i><span>Contacto</span></div>
+          <div class="funnel__steps"><span data-i18n="vis.f1">Visita</span><i></i><span data-i18n="vis.f2">Interés</span><i></i><span data-i18n="vis.f3">Contacto</span></div>
         </div>
       </div>
       <div class="pane__body">
-        <h3>Una página. Un objetivo.<br><em>Una conversión.</em></h3>
-        <p>Páginas de aterrizaje enfocadas en un único resultado: la venta, el contacto o la reserva que necesita su campaña.</p>
+        <h3 data-i18n="svc.land.h">Una página. Un objetivo.<br><em>Una conversión.</em></h3>
+        <p data-i18n="svc.land.p">Páginas de aterrizaje enfocadas en un único resultado: la venta, el contacto o la reserva que necesita su campaña.</p>
         <ul>
-          <li>Un mensaje claro y una sola acción</li>
-          <li>Diseño persuasivo y carga inmediata</li>
-          <li>Formularios y WhatsApp conectados</li>
-          <li>Medición de cada conversión</li>
+          <li data-i18n="svc.land.l1">Un mensaje claro y una sola acción</li>
+          <li data-i18n="svc.land.l2">Diseño persuasivo y carga inmediata</li>
+          <li data-i18n="svc.land.l3">Formularios y WhatsApp conectados</li>
+          <li data-i18n="svc.land.l4">Medición de cada conversión</li>
         </ul>
-        <button type="button" class="btn btn--silver btn--sm" data-want="landing">Plantear una campaña</button>
+        <button type="button" class="btn btn--silver btn--sm" data-want="landing" data-i18n="svc.land.btn">Plantear una campaña</button>
       </div>
     </article>
-    <!-- III -->
     <article class="pane" data-pane="social" tabindex="0">
-      <div class="pane__top"><span class="pane__num">III</span><span class="pane__tag">Redes sociales</span></div>
+      <div class="pane__top"><span class="pane__num">III</span><span class="pane__tag" data-i18n="svc.social.tag">Redes sociales</span></div>
       <div class="pane__visual">
         <div class="ig" aria-hidden="true">
-          <div class="ig__head"><img src="assets/img/pm-logo.png" alt=""><div><b>prestige.media</b><span>Publicaciones · Reels · Stories</span></div></div>
+          <div class="ig__head"><img src="assets/img/pm-logo.png" alt=""><div><b>prestige.media</b><span data-i18n="vis.ig">Publicaciones · Reels · Stories</span></div></div>
           <div class="ig__grid">
-            <span style="background-image:url(assets/img/work/julio-nails-lloret.jpg)"></span>
-            <span style="background-image:url(assets/img/work/carla-pitarch-nutricion.jpg)"></span>
-            <span style="background-image:url(assets/img/work/grand-cafe-latino.jpg)"></span>
-            <span style="background-image:url(assets/img/work/salon85.jpg)"></span>
-            <span style="background-image:url(assets/img/work/infinitybeauty-endospheres.jpg)"></span>
-            <span style="background-image:url(assets/img/work/fridabellesa.jpg)"></span>
+            <span class="post post--metal"><img src="assets/img/pm-logo.png" alt=""></span>
+            <span class="post post--quote" data-i18n="vis.post2">“Calidad<br>sin prisa”</span>
+            <span class="post post--reel"><i>▶</i></span>
+            <span class="post post--season" data-i18n="vis.post1">Nueva<br>temporada</span>
+            <span class="post post--orb"></span>
+            <span class="post post--cta" data-i18n="vis.post3">Reserve<br>hoy</span>
           </div>
           <div class="ig__hearts" data-hearts></div>
         </div>
       </div>
       <div class="pane__body">
-        <h3>Presencia constante,<br><em>sin ocupar su tiempo.</em></h3>
-        <p>Estrategia, contenido y calendario editorial gestionados de principio a fin, con informes claros de lo que funciona.</p>
+        <h3 data-i18n="svc.social.h">Presencia constante,<br><em>sin ocupar su tiempo.</em></h3>
+        <p data-i18n="svc.social.p">Estrategia, contenido y calendario editorial gestionados de principio a fin, con informes claros de lo que funciona.</p>
         <ul>
-          <li>Estrategia y línea visual de marca</li>
-          <li>Calendario editorial mensual</li>
-          <li>Posts, reels y stories</li>
-          <li>Informe mensual de resultados</li>
+          <li data-i18n="svc.social.l1">Estrategia y línea visual de marca</li>
+          <li data-i18n="svc.social.l2">Calendario editorial mensual</li>
+          <li data-i18n="svc.social.l3">Posts, reels y stories</li>
+          <li data-i18n="svc.social.l4">Informe mensual de resultados</li>
         </ul>
-        <button type="button" class="btn btn--silver btn--sm" data-want="social">Delegar la gestión</button>
+        <button type="button" class="btn btn--silver btn--sm" data-want="social" data-i18n="svc.social.btn">Delegar la gestión</button>
       </div>
     </article>
-    <!-- IV -->
     <article class="pane" data-pane="seo" tabindex="0">
-      <div class="pane__top"><span class="pane__num">IV</span><span class="pane__tag">Posicionamiento en Google</span></div>
+      <div class="pane__top"><span class="pane__num">IV</span><span class="pane__tag" data-i18n="svc.seo.tag">Posicionamiento en Google</span></div>
       <div class="pane__visual">
         <div class="serp" aria-hidden="true">
           <div class="serp__box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span data-typing></span><i class="serp__caret"></i></div>
           <ol class="serp__list" data-serp>
-            <li><b>Competidor A</b><span>competidor-a.com</span></li>
-            <li><b>Competidor B</b><span>competidor-b.es</span></li>
-            <li class="is-you"><b>Su negocio ★</b><span>suempresa.com</span></li>
-            <li><b>Directorio local</b><span>guia-local.com</span></li>
+            <li><b data-i18n="vis.a">Competidor A</b><span>competidor-a.com</span></li>
+            <li><b data-i18n="vis.b">Competidor B</b><span>competidor-b.es</span></li>
+            <li class="is-you"><b data-i18n="vis.you">Su negocio ★</b><span data-i18n="vis.url">suempresa.com</span></li>
+            <li><b data-i18n="vis.dir">Directorio local</b><span>guia-local.com</span></li>
           </ol>
         </div>
       </div>
       <div class="pane__body">
-        <h3>Visibilidad en el momento<br><em>en que le buscan.</em></h3>
-        <p>SEO técnico y de contenido con objetivos de tráfico cualificado, medidos mes a mes.</p>
+        <h3 data-i18n="svc.seo.h">Visibilidad en el momento<br><em>en que le buscan.</em></h3>
+        <p data-i18n="svc.seo.p">SEO técnico y de contenido con objetivos de tráfico cualificado, medidos mes a mes.</p>
         <ul>
-          <li>Auditoría técnica y de contenidos</li>
-          <li>Palabras clave con intención de compra</li>
-          <li>Google Business Profile optimizado</li>
-          <li>Seguimiento mensual de posiciones</li>
+          <li data-i18n="svc.seo.l1">Auditoría técnica y de contenidos</li>
+          <li data-i18n="svc.seo.l2">Palabras clave con intención de compra</li>
+          <li data-i18n="svc.seo.l3">Google Business Profile optimizado</li>
+          <li data-i18n="svc.seo.l4">Seguimiento mensual de posiciones</li>
         </ul>
-        <button type="button" class="btn btn--silver btn--sm" data-want="seo">Analizar su visibilidad</button>
+        <button type="button" class="btn btn--silver btn--sm" data-want="seo" data-i18n="svc.seo.btn">Analizar su visibilidad</button>
       </div>
     </article>
   </div>
-  <p class="services__extra" data-reveal>También: <b>branding e identidad visual</b> y <b>campañas de publicidad</b> en Google y redes sociales.</p>
+  <p class="services__extra" data-reveal data-i18n="svc.extra">También: <b>branding e identidad visual</b> y <b>campañas de publicidad</b> en Google y redes sociales.</p>
 </section>
 
 <!-- ============ MÉTODO (esfera) ============ -->
 <section class="method" id="metodo">
   <div class="method__pin">
     <div class="method__text">
-      <p class="kicker">III · Método</p>
-      <h2 class="h2">Precisión <em>relojera</em>,<br>aplicada al marketing.</h2>
+      <p class="kicker" data-i18n="met.kicker">III · Método</p>
+      <h2 class="h2" data-i18n="met.title">Precisión <em>relojera</em>,<br>aplicada al marketing.</h2>
       <ol class="steps" data-steps>
-        <li class="is-on"><span>01</span><div><b>Diagnóstico</b><p>Escuchamos, analizamos su negocio, su competencia y su punto de partida.</p></div></li>
-        <li><span>02</span><div><b>Estrategia</b><p>Definimos objetivos medibles y el plan exacto para alcanzarlos.</p></div></li>
-        <li><span>03</span><div><b>Diseño y ejecución</b><p>Creamos la web, el contenido o la campaña: a medida, sin plantillas.</p></div></li>
-        <li><span>04</span><div><b>Medición y mejora</b><p>Informes claros cada mes y ajustes continuos según los resultados.</p></div></li>
+        <li class="is-on"><span>01</span><div><b data-i18n="met.s1.t">Diagnóstico</b><p data-i18n="met.s1.p">Escuchamos y analizamos su negocio, su competencia y su punto de partida.</p></div></li>
+        <li><span>02</span><div><b data-i18n="met.s2.t">Estrategia</b><p data-i18n="met.s2.p">Definimos objetivos medibles y el plan exacto para alcanzarlos.</p></div></li>
+        <li><span>03</span><div><b data-i18n="met.s3.t">Diseño y ejecución</b><p data-i18n="met.s3.p">Creamos la web, el contenido o la campaña: a medida, sin plantillas.</p></div></li>
+        <li><span>04</span><div><b data-i18n="met.s4.t">Medición y mejora</b><p data-i18n="met.s4.p">Informes claros cada mes y ajustes continuos según los resultados.</p></div></li>
       </ol>
     </div>
     <div class="dial" data-dial aria-hidden="true">
@@ -256,32 +254,79 @@
 
 <!-- ============ CIFRAS ============ -->
 <section class="figures" id="cifras">
-  <div class="figure" data-reveal><strong>&lt;<b data-count="24">0</b>h</strong><span>Tiempo de respuesta</span></div>
-  <div class="figure" data-reveal><strong><b data-count="100">0</b>%</strong><span>Proyectos a medida</span></div>
-  <div class="figure" data-reveal><strong><b data-count="9">0</b></strong><span>Webs publicadas este año</span></div>
-  <div class="figure" data-reveal><strong><b data-count="0">0</b></strong><span>Permanencia de contrato</span></div>
+  <div class="figure" data-reveal><strong>&lt;<b data-count="24">0</b>h</strong><span data-i18n="fig.1">Tiempo de respuesta</span></div>
+  <div class="figure" data-reveal><strong><b data-count="100">0</b>%</strong><span data-i18n="fig.2">Proyectos a medida</span></div>
+  <div class="figure" data-reveal><strong><b data-count="1">0</b></strong><span data-i18n="fig.3">Interlocutor único</span></div>
+  <div class="figure" data-reveal><strong><b data-count="0">0</b></strong><span data-i18n="fig.4">Permanencia de contrato</span></div>
 </section>
 
-<!-- ============ PROYECTOS ============ -->
-<section class="work" id="proyectos">
-  <header class="work__head">
-    <p class="kicker" data-reveal>IV · Proyectos recientes</p>
-    <h2 class="h2" data-reveal>Cada marca, <em>una pieza única.</em></h2>
-    <p class="lead" data-reveal>Nueve webs diseñadas a medida para negocios de Lloret de Mar. Ninguna se parece a otra: cada una tiene su propia identidad y su propia interacción. Pase el cursor por la lista y ábralas en vivo.</p>
+<!-- ============ DISEÑE SU WEB ============ -->
+<section class="studio" id="disena">
+  <header class="studio__head">
+    <p class="kicker" data-reveal data-i18n="studio.kicker">IV · Diseñe su web</p>
+    <h2 class="h2" data-reveal data-i18n="studio.title">Diseñe su web. <em>En directo.</em></h2>
+    <p class="lead" data-reveal data-i18n="studio.lead">Elija su sector, su estilo y lo que necesita. Verá cómo cobra vida al instante y, cuando le guste, nos lo envía: lo convertimos en una web real, a medida.</p>
   </header>
-  <div class="showroom">
-    <ol class="work__list" data-work-list></ol>
-    <div class="screen" data-screen>
-      <div class="screen__frame">
-        <div class="browser__bar"><i></i><i></i><i></i><span data-screen-url>francybio.github.io</span></div>
-        <div class="screen__view" data-screen-view></div>
+
+  <div class="studio__grid">
+    <div class="studio__panel" data-reveal>
+      <div class="stabs" role="tablist">
+        <button type="button" role="tab" class="stab is-on" data-tab="0"><b>01</b><span data-i18n="studio.tab1">Negocio</span></button>
+        <button type="button" role="tab" class="stab" data-tab="1"><b>02</b><span data-i18n="studio.tab2">Estilo</span></button>
+        <button type="button" role="tab" class="stab" data-tab="2"><b>03</b><span data-i18n="studio.tab3">Secciones</span></button>
+        <button type="button" role="tab" class="stab" data-tab="3"><b>04</b><span data-i18n="studio.tab4">Funciones</span></button>
       </div>
-      <div class="screen__meta">
-        <p data-screen-note>&nbsp;</p>
-        <div class="screen__ctas">
-          <button type="button" class="btn btn--silver btn--sm" data-live>Ver en vivo aquí</button>
-          <a class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener" data-open>Abrir web ↗</a>
+
+      <div class="spanels">
+        <div class="spanel is-on" data-panel="0" role="tabpanel">
+          <label class="field field--studio"><input type="text" maxlength="28" data-s-name placeholder=" "><span data-i18n="studio.name">Nombre de su negocio</span></label>
+          <p class="slabel" data-i18n="studio.sector">Sector</p>
+          <div class="sgrid" data-s-sector></div>
         </div>
+        <div class="spanel" data-panel="1" role="tabpanel">
+          <p class="slabel" data-i18n="studio.style">Estilo</p>
+          <div class="sgrid sgrid--style" data-s-style></div>
+          <p class="slabel" data-i18n="studio.accent">Color principal</p>
+          <div class="swatches" data-s-accent></div>
+          <p class="slabel" data-i18n="studio.font">Tipografía</p>
+          <div class="schips" data-s-font></div>
+        </div>
+        <div class="spanel" data-panel="2" role="tabpanel">
+          <p class="slabel" data-i18n="studio.sections">Secciones</p>
+          <div class="schips" data-s-sections></div>
+          <p class="shint" data-i18n="studio.sectionsHint">Inicio y contacto siempre están incluidos.</p>
+        </div>
+        <div class="spanel" data-panel="3" role="tabpanel">
+          <p class="slabel" data-i18n="studio.features">Funcionalidades</p>
+          <div class="schips" data-s-features></div>
+        </div>
+      </div>
+
+      <div class="snav">
+        <button type="button" class="slink" data-s-prev>← <span data-i18n="studio.prev">Anterior</span></button>
+        <button type="button" class="slink slink--random" data-s-random>✦ <span data-i18n="studio.random">Sorpréndame</span></button>
+        <button type="button" class="slink" data-s-next><span data-i18n="studio.next">Siguiente</span> →</button>
+      </div>
+
+      <div class="summary">
+        <h4 data-i18n="studio.summary">Su web</h4>
+        <dl data-s-summary></dl>
+        <div class="summary__btns">
+          <a class="btn btn--silver btn--sm" href="#" target="_blank" rel="noopener" data-s-send data-i18n="studio.send">Enviar mi diseño</a>
+          <button type="button" class="btn btn--ghost btn--sm" data-s-form data-i18n="studio.toForm">Usar en el formulario</button>
+        </div>
+        <p class="summary__ok" data-s-ok aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div class="studio__stage" data-reveal>
+      <div class="devices" role="group">
+        <button type="button" class="is-on" data-device="desktop"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg><span data-i18n="studio.desktop">Escritorio</span></button>
+        <button type="button" data-device="mobile"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span data-i18n="studio.mobile">Móvil</span></button>
+      </div>
+      <div class="device" data-device-frame>
+        <div class="browser__bar device__bar"><i></i><i></i><i></i><span data-pv-url>sunegocio.com</span></div>
+        <div class="pv-viewport" data-pv-viewport data-lenis-prevent><div class="pv" data-pv></div></div>
       </div>
     </div>
   </div>
@@ -290,62 +335,62 @@
 <!-- ============ POR QUÉ ============ -->
 <section class="why" id="por-que">
   <div class="why__head">
-    <p class="kicker" data-reveal>Nuestro compromiso</p>
-    <h2 class="h2" data-reveal>Trato directo.<br><em>Resultados que no dependen de la suerte.</em></h2>
-    <p class="lead" data-reveal>Sin plantillas ni respuestas genéricas. Cada proyecto se diseña y se mide a partir de las necesidades reales de su negocio.</p>
+    <p class="kicker" data-reveal data-i18n="why.kicker">Nuestro compromiso</p>
+    <h2 class="h2" data-reveal data-i18n="why.title">Trato directo.<br><em>Resultados que no dependen de la suerte.</em></h2>
+    <p class="lead" data-reveal data-i18n="why.lead">Sin plantillas ni respuestas genéricas. Cada proyecto se diseña y se mide a partir de las necesidades reales de su negocio.</p>
   </div>
   <div class="why__grid">
-    <article class="why__card" data-reveal><span class="why__n">I</span><h3>Sin permanencia</h3><p>Trabajamos mes a mes. Una relación profesional se sostiene con resultados, no con contratos.</p></article>
-    <article class="why__card" data-reveal><span class="why__n">II</span><h3>Informes claros</h3><p>Cada mes sabrá en qué se ha invertido cada euro y qué ha conseguido, sin tecnicismos.</p></article>
-    <article class="why__card" data-reveal><span class="why__n">III</span><h3>Un solo interlocutor</h3><p>Hablará siempre con la persona que lleva su proyecto. Nunca con un centro de llamadas.</p></article>
+    <article class="why__card" data-reveal><span class="why__n">I</span><h3 data-i18n="why.1.t">Sin permanencia</h3><p data-i18n="why.1.p">Trabajamos mes a mes. Una relación profesional se sostiene con resultados, no con contratos.</p></article>
+    <article class="why__card" data-reveal><span class="why__n">II</span><h3 data-i18n="why.2.t">Informes claros</h3><p data-i18n="why.2.p">Cada mes sabrá en qué se ha invertido cada euro y qué ha conseguido, sin tecnicismos.</p></article>
+    <article class="why__card" data-reveal><span class="why__n">III</span><h3 data-i18n="why.3.t">Un solo interlocutor</h3><p data-i18n="why.3.p">Hablará siempre con la persona que lleva su proyecto. Nunca con un centro de llamadas.</p></article>
   </div>
 </section>
 
 <!-- ============ CONTACTO ============ -->
 <section class="contact" id="contacto">
   <div class="contact__intro">
-    <p class="kicker" data-reveal>V · Contacto</p>
-    <h2 class="h2" data-reveal>Hablemos de<br><em>su proyecto.</em></h2>
-    <p class="lead" data-reveal>Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta y sin compromiso.</p>
+    <p class="kicker" data-reveal data-i18n="ct.kicker">V · Contacto</p>
+    <h2 class="h2" data-reveal data-i18n="ct.title">Hablemos de<br><em>su proyecto.</em></h2>
+    <p class="lead" data-reveal data-i18n="ct.lead">Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta y sin compromiso.</p>
     <ul class="direct" data-reveal>
-      <li><a href="tel:+34625179835"><span>Teléfono</span><b>+34 625 179 835</b></a></li>
-      <li><a href="#" data-wa target="_blank" rel="noopener"><span>WhatsApp</span><b>Escríbanos ahora</b></a></li>
-      <li><a href="mailto:fbiondo2612@gmail.com"><span>Email</span><b>fbiondo2612@gmail.com</b></a></li>
+      <li><a href="tel:+34625179835"><span data-i18n="ct.phone">Teléfono</span><b>+34 625 179 835</b></a></li>
+      <li><a href="#" data-wa target="_blank" rel="noopener"><span data-i18n="ct.wa">WhatsApp</span><b data-i18n="ct.waCta">Escríbanos ahora</b></a></li>
+      <li><a href="mailto:fbiondo2612@gmail.com"><span data-i18n="ct.email">Email</span><b>fbiondo2612@gmail.com</b></a></li>
     </ul>
   </div>
 
   <form class="brief" data-brief novalidate data-reveal>
     <fieldset class="brief__step">
-      <legend><span>01</span>¿Qué necesita?</legend>
+      <legend><span>01</span><em data-i18n="form.s1">¿Qué necesita?</em></legend>
       <div class="opts" data-services>
-        <label class="opt"><input type="checkbox" name="svc" value="Web corporativa"><span><i>I</i>Web corporativa</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="Landing page"><span><i>II</i>Landing page</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="Gestión de redes sociales"><span><i>III</i>Redes sociales</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="Posicionamiento en Google (SEO)"><span><i>IV</i>SEO</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="Branding"><span><i>+</i>Branding</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="Publicidad online"><span><i>+</i>Publicidad</span></label>
-        <label class="opt"><input type="checkbox" name="svc" value="No estoy seguro"><span><i>?</i>No estoy seguro</span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="web"><span><i>I</i><em data-i18n="form.o.web">Web corporativa</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="land"><span><i>II</i><em data-i18n="form.o.land">Landing page</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="social"><span><i>III</i><em data-i18n="form.o.social">Redes sociales</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="seo"><span><i>IV</i><em data-i18n="form.o.seo">SEO</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="brand"><span><i>+</i><em data-i18n="form.o.brand">Branding</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="ads"><span><i>+</i><em data-i18n="form.o.ads">Publicidad</em></span></label>
+        <label class="opt"><input type="checkbox" name="svc" value="unsure"><span><i>?</i><em data-i18n="form.o.unsure">No estoy seguro</em></span></label>
       </div>
     </fieldset>
     <fieldset class="brief__step">
-      <legend><span>02</span>Sobre usted</legend>
+      <legend><span>02</span><em data-i18n="form.s2">Sobre usted</em></legend>
       <div class="fields">
-        <label class="field"><input type="text" name="name" autocomplete="name" placeholder=" " required><span>Nombre *</span></label>
-        <label class="field"><input type="text" name="company" autocomplete="organization" placeholder=" "><span>Empresa (opcional)</span></label>
-        <label class="field"><input type="email" name="email" autocomplete="email" placeholder=" " required><span>Email *</span></label>
-        <label class="field"><input type="tel" name="phone" autocomplete="tel" placeholder=" "><span>Teléfono</span></label>
+        <label class="field"><input type="text" name="name" autocomplete="name" placeholder=" " required><span data-i18n="form.name">Nombre *</span></label>
+        <label class="field"><input type="text" name="company" autocomplete="organization" placeholder=" "><span data-i18n="form.company">Empresa (opcional)</span></label>
+        <label class="field"><input type="email" name="email" autocomplete="email" placeholder=" " required><span data-i18n="form.email">Email *</span></label>
+        <label class="field"><input type="tel" name="phone" autocomplete="tel" placeholder=" "><span data-i18n="form.phone">Teléfono</span></label>
       </div>
     </fieldset>
     <fieldset class="brief__step">
-      <legend><span>03</span>Su proyecto</legend>
-      <label class="field field--area"><textarea name="msg" rows="4" placeholder=" "></textarea><span>Cuéntenos brevemente qué quiere conseguir</span></label>
-      <label class="check"><input type="checkbox" name="privacy" required><span>Acepto que Prestige Media use estos datos solo para responder a mi solicitud.</span></label>
+      <legend><span>03</span><em data-i18n="form.s3">Su proyecto</em></legend>
+      <label class="field field--area"><textarea name="msg" rows="4" placeholder=" "></textarea><span data-i18n="form.msg">Cuéntenos brevemente qué quiere conseguir</span></label>
+      <label class="check"><input type="checkbox" name="privacy" required><span data-i18n="form.privacy">Acepto que Prestige Media use estos datos solo para responder a mi solicitud.</span></label>
     </fieldset>
     <div class="brief__send">
       <p class="brief__err" data-err aria-live="polite"></p>
       <div class="brief__btns">
-        <button type="submit" class="btn btn--silver" data-send="wa">Enviar por WhatsApp</button>
-        <button type="submit" class="btn btn--ghost" data-send="mail">Enviar por email</button>
+        <button type="submit" class="btn btn--silver" data-send="wa" data-i18n="form.sendWa">Enviar por WhatsApp</button>
+        <button type="submit" class="btn btn--ghost" data-send="mail" data-i18n="form.sendMail">Enviar por email</button>
       </div>
     </div>
   </form>
@@ -358,24 +403,15 @@
     <img src="assets/img/pm-logo.png" alt="" aria-hidden="true">
     <p class="footer__word">PRESTIGE</p>
     <p class="footer__sub">— MEDIA —</p>
-    <p class="footer__tag">Redes sociales · Páginas web · Marketing digital</p>
+    <p class="footer__tag" data-i18n="foot.tag">Redes sociales · Páginas web · Marketing digital</p>
   </div>
   <div class="footer__cols">
-    <div><h4>Servicios</h4><a href="#servicios">Web corporativa</a><a href="#servicios">Landing pages</a><a href="#servicios">Redes sociales</a><a href="#servicios">Posicionamiento en Google</a></div>
-    <div><h4>Agencia</h4><a href="#agencia">La agencia</a><a href="#metodo">Método</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div>
-    <div><h4>Contacto</h4><a href="tel:+34625179835">+34 625 179 835</a><a href="mailto:fbiondo2612@gmail.com">fbiondo2612@gmail.com</a><a href="#" data-wa target="_blank" rel="noopener">WhatsApp</a></div>
+    <div><h4 data-i18n="foot.services">Servicios</h4><a href="#servicios" data-i18n="foot.web">Web corporativa</a><a href="#servicios" data-i18n="foot.land">Landing pages</a><a href="#servicios" data-i18n="foot.social">Redes sociales</a><a href="#servicios" data-i18n="foot.seo">Posicionamiento en Google</a></div>
+    <div><h4 data-i18n="foot.agency">Agencia</h4><a href="#agencia" data-i18n="menu.agency">La agencia</a><a href="#metodo" data-i18n="menu.method">Método</a><a href="#disena" data-i18n="menu.studio">Diseñe su web</a><a href="#contacto" data-i18n="menu.contact">Contacto</a></div>
+    <div><h4 data-i18n="foot.contact">Contacto</h4><a href="tel:+34625179835">+34 625 179 835</a><a href="mailto:fbiondo2612@gmail.com">fbiondo2612@gmail.com</a><a href="#" data-wa target="_blank" rel="noopener">WhatsApp</a></div>
   </div>
-  <div class="footer__bottom"><span>© 2026 Prestige Media</span><span>El prestigio no se improvisa. Se diseña.</span><a href="#inicio">Volver arriba ↑</a></div>
+  <div class="footer__bottom"><span>© 2026 Prestige Media</span><span data-i18n="foot.motto">El prestigio no se improvisa. Se diseña.</span><a href="#inicio" data-i18n="foot.top">Volver arriba ↑</a></div>
 </footer>
-
-<!-- visor en vivo -->
-<div class="live" aria-hidden="true" role="dialog" aria-label="Vista en vivo del proyecto">
-  <div class="live__shade" data-live-close></div>
-  <div class="live__win">
-    <div class="browser__bar"><i></i><i></i><i></i><span data-live-url></span><button type="button" class="live__x" data-live-close aria-label="Cerrar">✕</button></div>
-    <iframe title="Proyecto en vivo" data-live-frame loading="lazy"></iframe>
-  </div>
-</div>
 
 <a class="wa-fab" href="#" data-wa target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.1L2 22l5-1.3A11 11 0 0 0 20.5 3.5Zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3a9 9 0 1 1 7.3 3.9Zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.6.1-.2 0-.3 0-.5l-.9-2c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.3 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.9-1.3c.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3Z"/></svg>
@@ -384,6 +420,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
